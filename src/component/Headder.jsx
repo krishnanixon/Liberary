@@ -1,8 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Row, Col, Navbar, Form, Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function NavScrollExample() {
@@ -10,9 +6,8 @@ function NavScrollExample() {
         <Navbar expand="lg" className="bg-body-tertiary position-fixed shadow-md" style={{ zIndex: "100", width: "100%" }}>
             <Container fluid>
                 <Link to="/" style={LinkStyle}>
-                    <Navbar.Brand className='fw-bold fs-4 px-4'>PERSONAL SITE</Navbar.Brand>
+                    <Navbar.Brand className='fw-bold fs-4 px-4'>PERSONAL</Navbar.Brand>
                 </Link>
-
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -20,17 +15,17 @@ function NavScrollExample() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll>
                         <Link to="/" style={LinkStyle}>
-                            <div className='mt-1 px-2 ' >
+                            <div className='mt-1 px-2 fw-semibold' >
                                 Home
                             </div>
                         </Link>
                         <Link to="/all-books" style={LinkStyle}>
-                            <div className='mt-1 px-2' >
-                                Manage Books
+                            <div className='mt-1 px-2 fw-semibold' >
+                                Manage
                             </div>
                         </Link>
                         <Link to="/add-books" style={LinkStyle}>
-                            <div className='mt-1 px-2' >
+                            <div className='mt-1 px-2 fw-semibold' >
                                 Add Books
                             </div>
                         </Link>

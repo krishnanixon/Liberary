@@ -7,3 +7,13 @@ body {
 .mainContainer {
   padding: 20px;
 }
+
+.ImageStyle {
+  height: 85vh;
+  width: 550px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: fixed;
+  margin: auto;
+}

@@ -38,15 +38,14 @@ const AddBooks = ({ data, setData }) => {
     return (
         <><Container>
             <Row>
-                <Col xs={12} className='fs-4 fw-bold my-3'>
-                    Add Books
-                </Col>
                 <Col>
-                    <Row>
+                    <Row className='mb-5'>
                         <Col xs={3}></Col>
-                        <Col xs={6}>
+                        <Col xs={6} className='shadow-sm p-5 ' style={{ background: "#f6f6f6", borderRadius: "10px" }}>
+                            <Col xs={12} className='fs-2 fw-bold my-3 mb-4'>
+                                Add Books
+                            </Col>
                             <Form>
-
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Label>Book ID</Form.Label>
                                     <Form.Control
